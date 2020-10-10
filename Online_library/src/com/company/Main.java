@@ -8,7 +8,9 @@ public class Main {
         try {
             Client client = new Client("Din ", " ", "Winchester ");
             client.ValidMap(client);
-        } catch (ResultException ex) {
+            System.out.println("Serializable");
+            PersonSerializable personSerializable = new PersonSerializable();
+        }catch (ResultException ex) {
             System.out.println(ex.getMessage());
             System.out.println(ex.isResult());
         }
