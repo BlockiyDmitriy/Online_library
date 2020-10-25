@@ -37,9 +37,8 @@ public class PersonSerializable {
     }
 
     private void display(ArrayList<Person> newClients) {
-        for (Person p :
-                newClients) {
+        newClients.stream().forEach(p -> {
             System.out.printf("%s \t %s \t %s \t", p.getName(), p.getSurname(), p.getSurname());
-        }
+        });
     }
 }

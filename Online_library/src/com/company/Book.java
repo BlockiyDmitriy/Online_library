@@ -19,5 +19,6 @@ public class Book implements IBook {
         //Возвращает значение "false" для примера
         //Если поменять значение на "true", словим исключение
         return false;
+
     }
 }
